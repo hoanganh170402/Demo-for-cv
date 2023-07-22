@@ -11,6 +11,11 @@
     justify-content: space-between;
 }
 
+.navbar__list
+{
+    padding-left: 0;
+}
+
 .navbar__item,
 .navbar__item-link
 {
