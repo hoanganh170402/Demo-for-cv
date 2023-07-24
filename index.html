@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
     <title>Demo For Cv</title>
 </head>
 <body>
@@ -18,22 +18,48 @@
             <div class="grid">
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item-link navbar__item-link--border">Vào cửa hàng trên ứng dụng b.t.h.a</a>
+                        <li class="navbar__item navbar__item--showqr navbar__item--border">
+                                Vào cửa hàng trên ứng dụng b.t.h.a
+                            <!-- QR code -->
+                            <div class="navbar__qr">
+                                <img src="./assets/img/qrcode.png" alt="QR Code" class="navbar__qr-img">
+                                <div class="navbar__qr-apps">
+                                    <a href="" class="navbar__qr-link">
+                                        <img src="./assets/img/appstore.png" alt="" class="navbar__qr-down-img">
+                                    </a>
+                                    <a href="" class="navbar__qr-link">
+                                        <img src="./assets/img/googleplay.png" alt="" class="navbar__qr-down-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End QR code -->
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item-link">Kết nối</a>
+                                <span class="navbar__item--no-pointer" >Kết nối</span>
+                                <a href="" class="navbar__item-icon-link">
+                                    <i class="navbar__item-icon fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="" class="navbar__item-icon-link">
+                                    <i class="navbar__item-icon fa-brands fa-instagram"></i>
+                                </a>
                         </li>
                     </ul>
     
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a href="" class="navbar__item-link">Thông báo</a>
+                            <a href="" class="navbar__item-link">
+                                <i class="navbar__item-icon fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item-link">Trợ giúp</a>
+                            <a href="" class="navbar__item-link">
+                                <i class="navbar__item-icon fa-solid fa-question"></i>
+                                Trợ giúp
+                            </a>
                         </li>
-                        <li class="navbar__item navbar__item--strong navbar__item-link--border ">Đăng ký</li>
+                        <li class="navbar__item navbar__item--strong navbar__item--border ">Đăng ký</li>
                         <li class="navbar__item navbar__item--strong ">Đăng nhập</li>
                     </ul>
                 </nav>
