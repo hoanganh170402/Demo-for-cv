@@ -158,6 +158,17 @@
     /* 90% đầu tiên là của trục X ( hoành độ) 0% còn lại là của trục y ( tung độ) */
     transform-origin: 90% 0%;
     animation:growth ease-in 0.3s ;
+    /* Tối ưu chuyển động cho animation */
+    will-change: opacity, transform;
+    /* chrome and safari */
+    -webkit-animation: growth ease-in 0.3s;
+    /* firefox */
+    -moz-animation: growth ease-in 0.3s ;
+    /* opera */
+    -o-animation: growth ease-in 0.3s ;
+    /* Internet explorer */
+    -ms-animation:growth ease-in 0.3s ;
+
 }
 
 .navbar__notify::before
