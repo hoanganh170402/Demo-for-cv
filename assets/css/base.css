@@ -59,6 +59,7 @@ html
     }
 }
 
+/* modal */
 .modal
 {
     position: fixed;
@@ -85,5 +86,28 @@ html
     position: relative;
     border-radius: 8px;
 } 
+
+/* button */
+
+.btn
+{
+    min-width: 142px;
+    height: 36px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border:none;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Khi nào trong một class có cả 2 thì mới chạy */
+.btn.btn--primary
+{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+
 
 
