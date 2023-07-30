@@ -80,7 +80,6 @@ html
 
 .modal__body
 {
-    background-color:#fff;
     margin: auto;
     z-index: 1;
     position: relative;
@@ -98,7 +97,23 @@ html
     border:none;
     text-decoration: none;
     background-color: transparent;
-    padding: 0;
+    padding: 0 12px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--size-s
+{
+    height: 32px;
+    border-radius: 2px;
+    padding: 0 8px;
+}
+
+.btn.btn--hover-nomal:hover
+{
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* Khi nào trong một class có cả 2 thì mới chạy */
