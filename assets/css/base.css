@@ -4,6 +4,7 @@
     --white-color:#fff;
     --black-color:#000;
     --text-color:#333;
+    --border-color:#dbdbdb;
 }
 
 *
@@ -21,7 +22,11 @@ html
     box-sizing: border-box;
 }
 
+/* Dùng chung */
 
+
+
+/* ------------------------------------------------------------ */
 
 .grid
 {
@@ -102,6 +107,7 @@ html
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.6rem;
 }
 
 .btn.btn--size-s

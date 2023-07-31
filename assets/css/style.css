@@ -107,6 +107,7 @@
     display: none;
 }
 
+
 .navbar__qr::before
 {
     position: absolute;
@@ -317,6 +318,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
 }
 
 .auth-form__heading
@@ -341,7 +343,7 @@
     padding-left: 8px;
     font-size: 1.4rem;
     outline: none;
-    border:1px solid #dbdbdb;
+    border:1px solid var(--border-color);
 }
 
 .auth-form__input:focus
@@ -412,4 +414,27 @@
 .auth-form__socials-title
 {
     margin: 8px 20px;
+}
+
+.auth-form__help
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link
+{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.auth-form__help-link-password
+{
+    color: var(--primary-color);
+}
+
+.auth-form__help-space
+{
+    border-left: 1px solid #dbdbdb;
+    margin: 0 12px;
 }
