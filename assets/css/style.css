@@ -157,6 +157,7 @@
     right: 0;
     border: 1px solid #ccc;
     display: none;
+    z-index: 1;
     /* 90% đầu tiên là của trục X ( hoành độ) 0% còn lại là của trục y ( tung độ) */
     transform-origin: 90% 0%;
     animation:growth ease-in 0.3s ;
@@ -235,7 +236,7 @@
 
 .navbar__notify-item:hover
 {
-    background-color: #eee;
+    background-color: var(--hover-background-color);
 }
 
 .navbar__notify-item--view
@@ -287,7 +288,7 @@
 
 .navbar__notify-footer:hover
 {
-    background-color: #eee;
+    background-color: var(--hover-background-color);
 }
 
 .navbar__notify-footer-btn
@@ -463,20 +464,80 @@
     height: 40px;
     background-color: var(--white-color);
     flex: 1;
-    border-radius: 3px;
+    border-radius: 2px;
     display: flex;
     align-items: center;
 }
 
+.header__search-input-wrap
+{
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
 .header__search-input
 {
-    flex:1;
+    width: 100%;
+    height: 100%;
     outline: none;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 1.4rem;
     color: var(--text-color);
     padding: 0 10px;
+}
+
+.header__search-input:focus ~ .header__search-history
+{
+    display: block;
+}
+
+.header__search-history
+{
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    background-color: var(--white-color);
+    width: calc(100% - 16px);
+    border-radius: 2px;
+    box-shadow: 0px 1px 2px #dbdbdb;
+    display: none;
+}
+
+.header__search-history-heading
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #949494;
+    margin: 10px 10px;
+}
+
+.header__search-history-list
+{
+    list-style: none;
+    padding-left: 0 ;
+    margin: 0;
+}
+
+.header__search-history-item
+{
+
+    height: 38px;
+    line-height: 38px;
+}
+
+.header__search-history-item:hover
+{
+    background-color: var(--hover-background-color);
+}
+
+.header__search-history-item a 
+{
+    margin: 0 10px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 .header__search-select
@@ -538,19 +599,19 @@
 
 .header__search-item:first-child
 {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .header__search-item:last-child
 {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .header__search-item:hover
 {
-    background-color: #f1f1f1;
+    background-color: var(--hover-background-color);
 }
 
 .header__search-item-title
@@ -579,7 +640,7 @@
     margin: 0 3px 0 10px;
     height: 34px;
     width: 60px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .header__search-btn:hover
