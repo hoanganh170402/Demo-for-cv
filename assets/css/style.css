@@ -689,7 +689,9 @@
     box-shadow: 0px 1px 2px #dfdfdf;
     border-radius: 2px;
     display: none;
-    animation: fadeIn ease 0.3s;
+    /* 90% đầu tiên là của trục X ( hoành độ) 0% còn lại là của trục y ( tung độ) */
+    transform-origin: 90% 0%;
+    animation: growth ease 0.3s;
 }
 
 .header__cart-wrap:hover 
