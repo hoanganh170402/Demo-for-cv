@@ -16,6 +16,8 @@
 {
     padding-left: 0;
     margin-top: 6px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar__item
@@ -31,6 +33,7 @@
 {
     display: block;
     animation: fadeIn ease 0.3s;
+    z-index: 1;
 }
 
 .navbar__item--show-notify:hover .navbar__notify
@@ -62,8 +65,6 @@
     text-decoration: none;
 }
 
-
-
 .navbar__item--border::after
 {
     content: "";
@@ -92,6 +93,104 @@
 {
     font-size: 1.8rem;
     margin: 0 4px;
+}
+
+.navbar__item-user
+{
+    display: inline-flex;
+    align-items: center;
+    padding-top: 2px;
+    position: relative;
+}
+
+.navbar__item-user-img
+{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.navbar__item-user-name
+{
+    font-size: 1.6rem;
+    padding-left: 8px;
+}
+
+.navbar__item-user:hover .navbar__item-user-menu
+{
+    display: block;
+}
+
+.navbar__item-user-menu
+{
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 180px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    padding-left: 0;
+    box-shadow: 0px 1px 2px #dbdbdb;
+    animation: growth ease 0.3s;
+    /* 90% đầu tiên là của trục X ( hoành độ) 0% còn lại là của trục y ( tung độ) */
+    transform-origin: 90% 0%;
+    display: none;
+}
+
+.navbar__item-user-menu::before
+{
+    content: "";
+    z-index: -1;
+    border-style: solid;
+    border-width: 20px 30px;
+    /* top right bottom left */
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 0px;
+    top: -29px;
+}
+.navbar__item-user-menu::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -2px;
+    width: 50%;
+    height: 20px;
+}
+
+.navbar__item-user-item
+{
+
+}
+
+.navbar__item-user-item:hover
+{
+    background-color: var(--hover-background-color);
+}
+
+.navbar__item-user-item:first-child
+{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.navbar__item-user-item:last-child
+{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.navbar__item-user-item a
+{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 10px 16px;
+    display: inline-block;
 }
 
 /* QR code */
