@@ -149,6 +149,7 @@
     position: absolute;
     right: 0px;
     top: -29px;
+    z-index: -1;
 }
 
 .navbar__item-user-list::after
