@@ -23,7 +23,7 @@
 .navbar__item
 {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 0 8px;
     font-weight: 400;
     position: relative;
@@ -33,6 +33,7 @@
 {
     display: block;
     animation: fadeIn ease 0.3s;
+    z-index: 1;
 }
 
 .navbar__item--show-notify:hover .navbar__notify
@@ -89,9 +90,13 @@
     text-decoration: none;
 }
 
+.navbar__item-icon-link:nth-child(2)
+{
+    margin-left: 4px;
+}
+
 .navbar__item-icon
 {
-    font-size: 1.8rem;
     margin: 0 4px;
 }
 
@@ -113,7 +118,8 @@
 .navbar__item-user-name
 {
     font-size: 1.6rem;
-    padding: 2px 4px 0;
+    padding: 2px 8px 0;
+    font-weight: 500;
 }
 
 
@@ -165,6 +171,11 @@
 .navbar__item-user-item
 {
 
+}
+
+.navbar__item-user-item--separate
+{
+    border-top: 1px solid var(--border-color);
 }
 
 .navbar__item-user-item:hover
@@ -270,6 +281,7 @@
     -o-animation: growth ease-in 0.3s ;
     /* Internet explorer */
     -ms-animation:growth ease-in 0.3s ;
+    border-radius: 2px;
 
 }
 
@@ -552,6 +564,11 @@
 .header__logo
 {
     width: 200px;
+}
+.header__logo-link
+{
+    color: transparent;
+    text-decoration: none;
 }
 
 .header__logo-img
