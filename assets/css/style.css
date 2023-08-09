@@ -23,7 +23,7 @@
 .navbar__item
 {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0 8px;
     font-weight: 400;
     position: relative;
@@ -89,9 +89,14 @@
     text-decoration: none;
 }
 
+.navbar__item-icon-link:nth-child(2)
+{
+    margin-left: 3px;
+}
+
 .navbar__item-icon
 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 0 4px;
 }
 
@@ -99,7 +104,6 @@
 {
     display: inline-flex;
     align-items: center;
-    padding-top: 2px;
     position: relative;
 }
 
@@ -112,8 +116,9 @@
 
 .navbar__item-user-name
 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding-left: 8px;
+    font-weight: 500;
 }
 
 .navbar__item-user:hover .navbar__item-user-menu
@@ -165,6 +170,11 @@
 .navbar__item-user-item
 {
 
+}
+
+.navbar__item-user-item--separate
+{
+    border-top: 1px solid var(--border-color);
 }
 
 .navbar__item-user-item:hover
@@ -254,7 +264,7 @@
     background-color: var(--white-color);
     top: 150%;
     right: 0;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     display: none;
     z-index: 1;
     /* 90% đầu tiên là của trục X ( hoành độ) 0% còn lại là của trục y ( tung độ) */
@@ -270,7 +280,7 @@
     -o-animation: growth ease-in 0.3s ;
     /* Internet explorer */
     -ms-animation:growth ease-in 0.3s ;
-
+    border-radius: 2px;
 }
 
 .navbar__notify::before
@@ -312,7 +322,6 @@
 
 .navbar__notify-header
 {
-    height: 40px;
     background-color: var(--white-color);
 }
 
@@ -553,6 +562,12 @@
     width: 200px;
 }
 
+.header__logo-link
+{
+    color: transparent;
+    text-decoration: none;
+}
+
 .header__logo-img
 {
     width: 150px;
@@ -679,6 +694,7 @@
     box-shadow: 0 1px 3px #d1d1d1;
     display: none;
     animation: fadeIn ease 0.15s;
+    border-radius: 2px;
 }
 
 .header__search-option::before
