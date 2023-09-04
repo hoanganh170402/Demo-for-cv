@@ -1142,3 +1142,109 @@
     color: var(--text-color);
 }
 
+
+/* Home product item */
+
+.home-product-item
+{
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+.home-product-item__img
+{
+    /* Lí do dùng background-image thay cho thẻ img?
+    có thể tự giới hạn kích thước hình ảnh và luôn hiển thị trong tâm ảnh*/
+
+    /* khi sử dụng padding-top:100% ở background-image sẽ tỉ lệ tương đối
+    với chính thằng chứa nó aka home-product-item */
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* Luôn soi vào trong tâm ảnh */
+    background-position: center;
+}
+
+.home-product-item__name
+{
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    height: 3.6rem;
+    font-weight: 400;
+    margin: 10px;
+    overflow: hidden;
+    /* Dùng trong trường hợp trình duyệt không hỗ trợ webkit  */
+    display: block;
+    display: -webkit-box;
+    /* hướng của dòng chữ -- trong đây thì là từ trên xuống */
+    -webkit-box-orient: vertical;
+    /* hạn chế nội dung của một khối và set được số dòng */
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item__price
+{
+
+}
+
+.home-product-item__price-old
+{
+
+}
+
+.home-product-item__price-current
+{
+
+}
+
+.home-product-item__action
+{
+
+}
+
+.home-product-item__like
+{
+
+}
+
+.home-product-item__rating
+{
+
+}
+
+.home-product-item__origin
+{
+
+}
+
+.home-product-item__origin-brand
+{
+
+}
+
+.home-product-item__origin-name
+{
+
+}
+
+.home-product-item__favourite
+{
+
+}
+
+.home-product-item__sale-off
+{
+
+}
+
+.home-product-item__sale-off-percent
+{
+
+}
+
+.home-product-item__sale-off-label
+{
+
+}
