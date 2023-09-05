@@ -1228,11 +1228,29 @@ i.home-product-item__like-tick
 {
     font-size: 1rem;
     color: #d5d5d5;
+    margin-left: auto;
+}
+
+.home-product-item__star--gold 
+{
+    color: var(--yellow-color);
+}
+
+.home-product-item__sold
+{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-left: 6px;
 }
 
 .home-product-item__origin
 {
-
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: #595959;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 
 .home-product-item__origin-brand
