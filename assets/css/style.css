@@ -1186,32 +1186,59 @@
 
 .home-product-item__price
 {
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .home-product-item__price-old
-{
-
+{   
+    font-size: 1.4rem;
+    color: #a0a0a0;
+    text-decoration: line-through;
+    margin-left: 10px;
 }
 
 .home-product-item__price-current
 {
-
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-left: 10px;
 }
 
 .home-product-item__action
 {
-
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .home-product-item__like
 {
-
+    font-size: 1.6rem;
 }
+
+i.home-product-item__like-tick
+{
+    display: none;
+}
+
+.home-product-item__like--liked .home-product-item__like-tick
+{
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+.home-product-item__like--liked .home-product-item__like-none
+{
+    display: none;
+}
+
 
 .home-product-item__rating
 {
-
+    font-size: 1rem;
+    color: #d5d5d5;
 }
 
 .home-product-item__origin
