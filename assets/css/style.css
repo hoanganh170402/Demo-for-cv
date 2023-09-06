@@ -1149,6 +1149,7 @@
 {
     background-color: var(--white-color);
     margin-top: 10px;
+    position: relative;
 }
 
 .home-product-item__img
@@ -1173,7 +1174,7 @@
     line-height: 1.8rem;
     height: 3.6rem;
     font-weight: 400;
-    margin: 10px;
+    margin: 10px 10px 0;
     overflow: hidden;
     /* Dùng trong trường hợp trình duyệt không hỗ trợ webkit  */
     display: block;
@@ -1274,9 +1275,41 @@ i.home-product-item__like-tick
 
 }
 
-.home-product-item__favourite
+.home-product-item__favorite
 {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color:currentColor ;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
 
+.home-product-item__favorite::after
+{
+    content: "";
+    position: absolute;
+    border-top: currentColor solid 3px;
+    border-left: transparent solid 3px;
+    left: 0;
+    bottom: -3px;
+    filter: brightness(60%) ;
+}
+
+.home-product-item__favorite i
+{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.home-product-item__favorite span
+{
+    color: var(--white-color);
 }
 
 .home-product-item__sale-off

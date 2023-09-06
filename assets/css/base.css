@@ -219,6 +219,7 @@ html
     padding-left: 0;
     list-style: none;
     display: none;
+    animation: fadeIn linear 0.1s;
 }
 
 .select-input__list::before
