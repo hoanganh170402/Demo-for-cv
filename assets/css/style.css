@@ -1391,3 +1391,11 @@ i.home-product-item__like-tick
     font-weight: 500;
     font-size: 1.4rem;
 }
+
+
+/* pagination */
+
+.home-pagination
+{
+    margin: 40px 0 32px;
+}

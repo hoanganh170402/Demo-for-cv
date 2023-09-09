@@ -7,6 +7,8 @@
     --border-color:#dbdbdb;
     --yellow-color:#ffce3d;
 
+    --primary-color-hover:#f86244;
+
     --header-height:120px;
     --navbar-height:36px;
     --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
@@ -249,4 +251,56 @@ html
 {
     color: var(--primary-color);
 }
+
+/* pagination */
+
+.pagination
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item
+{
+    margin: 0 14px; 
+}
+
+.pagination-item--active .pagination-item__link
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover
+{
+    color: var(--white-color);
+    background-color: var(--primary-color-hover);
+}
+
+.pagination-item__link
+{
+    --height:30px;
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,.4);
+    font-size: 2rem;
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 40px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item__link:hover
+{
+    color: var(--primary-color);
+}
+
+.pagination-item__icon
+{
+    font-size: 1.6rem;
+}
+
 
