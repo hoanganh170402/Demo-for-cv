@@ -5,8 +5,10 @@
     --black-color:#000;
     --text-color:#333;
     --border-color:#dbdbdb;
-    --hover-background-color:#f0f0f0;
     --yellow-color:#ffce3d;
+
+    --hover-background-color:#f0f0f0;
+    --hover-primary-color:#ff5e3e;
 
     --header-height:120px;
     --navbar-height:36px;
@@ -252,6 +254,56 @@ html
     color: var(--primary-color);
 }
 
+/* pagination */
+
+.pagination
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item
+{
+    margin: 0 15px;
+}
+
+.pagination-item--active .pagination-item__link
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover
+{
+    color: var(--white-color);
+    background-color: var(--hover-primary-color) ;
+}
+
+.pagination-item__link
+{
+    --height:30px;
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,.4);
+    font-size: 2rem;
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 40px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item__link:hover
+{
+    color: var(--primary-color);
+}
+
+.pagination-item__icon
+{
+    font-size: 1.6rem;
+}
 
 
 
