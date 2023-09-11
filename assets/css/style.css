@@ -1399,3 +1399,59 @@ i.home-product-item__like-tick
 {
     margin: 40px 0 32px;
 }
+
+/* footer-contact */
+.footer-2
+{
+    background-color: #f5f5f5;
+}
+
+.footer-contact
+{
+    
+}
+
+.footer-info__list
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.footer-info__item
+{
+    
+    margin: 22px;
+    position: relative;
+}
+
+.footer-info__item:first-child::before
+{
+    display: none;
+}
+
+.footer-info__item::before
+{
+    content: "";
+    position: absolute;
+    border-left: 1px solid #dfdfdf;
+    height: 18px;
+    top: 0;
+    left: -22px;
+}
+
+.footer-info__item-link
+{
+    font-size: 1.8rem;
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+}
+
+.footer-location,
+.footer-copyright
+{
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
