@@ -1,3 +1,32 @@
+/* 
+    Lí do dùng box-sizing: border-box
+    theo kiến thức của mình học được thì mình có thể trả lời như này
+    thuộc tín box-sizing: border-box là tính width với height từ phần border luôn
+    còn nếu ko thì nó sẽ tính từ content thôi, vd như bạn đặt width là 300px 
+    mà để border là 1px và pading là 3px thì nếu ko có box-sizing: border-box 
+    nó sẽ ra ra width là 308px (300+12+32), còn nếu có thì nó sẽ ra đúng 300px. 
+    nên trong video này nếu ko có box-sizing: border-box thì mổi ô sẽ có kích thước 
+    lớn hơn tỉ lệ ban đầu vì có thêm padding nên nó sẽ bị xuống hàng
+    nếu có sai sót gì thì mong các bác góp ý với ạ :D
+
+
+    Ý kiến của Thành Tạ
+    nói thẳng ra là thuộc tính box-sizing: border-box. 
+    cho dù pading hay border các kiểu thì nó vẫn giữ width với hight ban đầu
+*/
+
+:root
+{
+    --mb-gutter:4px;
+    --mb-gutter-negative:-4px;
+    --tl-gutter:8px;
+    --tl-gutter-negative:-8px;
+    --pc-low-gutter:12px;
+    --pc-low-gutter-negative:-12px;
+    --pc-hi-gutter:16px;
+    --pc-hi-gutter-negative:-16px;
+}
+
 .grid
 {
     width: 100%;
@@ -19,10 +48,11 @@
     /* Tổng chiểu ngang column vượt quá row thì xuống hàng */
     flex-wrap: wrap;
     /* Bỏ 2 phần thừa do gutters tạo ra ở 2 phía */
-    margin-left: -4px;
-    margin-right: -4px;
+    margin-left: var(--mb-gutter-negative);
+    margin-right: var(--mb-gutter-negative);
 }
 
+/* bỏ gutters */
 .row.no-gutters
 {
     margin-left: 0;
@@ -31,8 +61,8 @@
 
 .col
 {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: var(--mb-gutter);
+    padding-right: var(--mb-gutter);
 }
 
 .row.no-gutters .col
@@ -122,6 +152,7 @@
 }
 
 /* column offset mobile */
+/* offset là di chuyển vị trí cho column */
 .mb-o-1
 {
     margin-left: 8.33333%;
@@ -182,14 +213,14 @@
 {
     .row
     {
-        margin-left: -8px;
-        margin-right: -8px;
+        margin-left: var(--tl-gutter-negative);
+        margin-right: var(--tl-gutter-negative);
     }
 
     .col 
     {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: var(--tl-gutter);
+        padding-right: var(--tl-gutter);
     }
 
     /* dùng để set được chiều cao và dài cho các thẻ */
@@ -350,8 +381,8 @@
 {
     .row
     {
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: var(--pc-low-gutter-negative);
+        margin-right: var(--pc-low-gutter-negative);
     }
 
     .row.sm-gutter 
@@ -362,8 +393,8 @@
 
     .col
     {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: var(--pc-low-gutter);
+        padding-right: var(--pc-low-gutter);
     }
 
     .row.sm-gutter .col 
@@ -549,8 +580,8 @@
 
     .wide .row
     {
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: var(--pc-low-gutter-negative);
+        margin-right: var(--pc-low-gutter-negative);
     }
 
     .wide .row.sm-gutter 
@@ -561,8 +592,8 @@
 
     .wide .col
     {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: var(--pc-low-gutter);
+        padding-right: var(--pc-low-gutter);
     }
 
     .wide .row.sm-gutter .col 
@@ -740,8 +771,8 @@
     
     .wide .row
     {
-        margin-left: -12px;
-        margin-right: -12px;
+        margin-left: var(--pc-low-gutter-negative);
+        margin-right: var(--pc-low-gutter-negative);
     }
 
     .wide .row.sm-gutter 
@@ -752,8 +783,8 @@
 
     .wide .col
     {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: var(--pc-low-gutter);
+        padding-right: var(--pc-low-gutter);
     }
 
     .wide .row.sm-gutter .col 
@@ -930,8 +961,8 @@
 
     .wide .row
     {
-        margin-left: -16px;
-        margin-right: -16px;
+        margin-left: var(--pc-hi-gutter-negative);
+        margin-right: var(--pc-hi-gutter-negative);
     }
 
     .wide .row.sm-gutter 
@@ -942,8 +973,8 @@
 
     .wide .col
     {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: var(--pc-hi-gutter);
+        padding-right: var(--pc-hi-gutter);
     }
 
     .wide .row.sm-gutter .col 
