@@ -22,10 +22,35 @@
             font-size: 40px;
             color: #fff;
             text-align: center;
-            min-height: 380px;
-            line-height: 380px;
+            min-height: 180px;
+            line-height: 180px;
             background-color: orange;
         }
+
+        .main
+        {
+            display: flex;
+            padding: 0 16px;
+        }
+
+        .sidebar
+        {
+            width: 300px;
+        }
+
+        .container
+        {
+            flex: 1;
+        }
+
+        @media (max-width:1023px)
+        {
+            .hide
+            {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -64,28 +89,441 @@
         </div> -->
 
         <!-- layout 3 -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col pc-2 tl-0 mb-0">
                 <div class="item">category </div>
             </div>
             
             <div class="col pc-10 tl-12 mb-12">
-                <!-- sắp xếp theo này kia  -->
                 <div class="row">
-                    <div class="col pc-2-4 tl-4 mb-12">
+                    <div class="col pc-2-4 tl-4  mb-12">
                         <div class="item">item 1</div>
                     </div>
-                    <div class="col pc-2-4 tl-4 mb-12">
+                    <div class="col pc-2-4 tl-4  mb-12">
                         <div class="item">item 2</div>
                     </div>
-                    <div class="col pc-2-4 tl-4 mb-12">
+                    <div class="col pc-2-4 tl-4  mb-12">
                         <div class="item">item 3</div>
                     </div>
-                    <div class="col pc-2-4 tl-4 mb-12">
+                    <div class="col pc-2-4 tl-4  mb-12">
                         <div class="item">item 4</div>
                     </div>
-                    <div class="col pc-2-4 tl-4 mb-12">
+                    <div class="col pc-2-4 tl-4  mb-12">
                         <div class="item">item 5</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- layout 4 -->
+    <div class="main">
+        <div class="sidebar hide">
+            <h1>Side Bar</h1>
+            <ul>
+                <li>sidebar 1</li>
+                <li>sidebar 2</li>
+                <li>sidebar 3</li>
+                <li>sidebar 4</li>
+                <li>sidebar 5</li>
+                <li>sidebar 6</li>
+                <li>sidebar 7</li>
+                <li>sidebar 8</li>
+                <li>sidebar 9</li>
+                <li>sidebar 10</li>
+                <li>sidebar 11</li>
+                <li>sidebar 12</li>
+                <li>sidebar 13</li>
+                <li>sidebar 14</li>
+                <li>sidebar 15</li>
+                <li>sidebar 16</li>
+                <li>sidebar 17</li>
+                <li>sidebar 18</li>
+                <li>sidebar 19</li>
+                <li>sidebar 20</li>
+                <li>sidebar 21</li>
+                <li>sidebar 22</li>
+                <li>sidebar 23</li>
+                <li>sidebar 24</li>
+                <li>sidebar 25</li>
+                <li>sidebar 26</li>
+                <li>sidebar 27</li>
+                <li>sidebar 28</li>
+                <li>sidebar 29</li>
+                <li>sidebar 30</li>
+                <li>sidebar 31</li>
+                <li>sidebar 32</li>
+                <li>sidebar 33</li>
+                <li>sidebar 34</li>
+                <li>sidebar 35</li>
+                <li>sidebar 36</li>
+                <li>sidebar 37</li>
+                <li>sidebar 38</li>
+                <li>sidebar 39</li>
+                <li>sidebar 40</li>
+                <li>sidebar 41</li>
+                <li>sidebar 42</li>
+                <li>sidebar 43</li>
+                <li>sidebar 44</li>
+                <li>sidebar 45</li>
+                <li>sidebar 46</li>
+                <li>sidebar 47</li>
+                <li>sidebar 48</li>
+                <li>sidebar 49</li>
+                <li>sidebar 50</li>
+                <li>sidebar 51</li>
+                <li>sidebar 52</li>
+                <li>sidebar 53</li>
+                <li>sidebar 54</li>
+                <li>sidebar 55</li>
+                <li>sidebar 56</li>
+                <li>sidebar 57</li>
+                <li>sidebar 58</li>
+                <li>sidebar 59</li>
+                <li>sidebar 60</li>
+                <li>sidebar 61</li>
+                <li>sidebar 62</li>
+                <li>sidebar 63</li>
+                <li>sidebar 64</li>
+                <li>sidebar 65</li>
+                <li>sidebar 66</li>
+                <li>sidebar 67</li>
+                <li>sidebar 68</li>
+                <li>sidebar 69</li>
+                <li>sidebar 70</li>
+                <li>sidebar 71</li>
+                <li>sidebar 72</li>
+                <li>sidebar 73</li>
+                <li>sidebar 74</li>
+                <li>sidebar 75</li>
+                <li>sidebar 76</li>
+                <li>sidebar 77</li>
+                <li>sidebar 78</li>
+                <li>sidebar 79</li>
+                <li>sidebar 80</li>
+                <li>sidebar 81</li>
+                <li>sidebar 82</li>
+                <li>sidebar 83</li>
+                <li>sidebar 84</li>
+                <li>sidebar 85</li>
+                <li>sidebar 86</li>
+                <li>sidebar 87</li>
+                <li>sidebar 88</li>
+                <li>sidebar 89</li>
+                <li>sidebar 90</li>
+                <li>sidebar 91</li>
+                <li>sidebar 92</li>
+                <li>sidebar 93</li>
+                <li>sidebar 94</li>
+                <li>sidebar 95</li>
+                <li>sidebar 96</li>
+                <li>sidebar 97</li>
+                <li>sidebar 98</li>
+                <li>sidebar 99</li>
+                <li>sidebar 100</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 1</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 2</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 3</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 4</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 5</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 6</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 7</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 8</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 9</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 10</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 11</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 12</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 13</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 14</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 15</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 16</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 17</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 18</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 19</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 20</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 21</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 22</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 23</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 24</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 25</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 26</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 27</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 28</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 29</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 30</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 31</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 32</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 33</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 34</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 35</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 36</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 37</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 38</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 39</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 40</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 41</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 42</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 43</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 44</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 45</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 46</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 47</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 48</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 49</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 50</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 51</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 52</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 53</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 54</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 55</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 56</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 57</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 58</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 59</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 60</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 61</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 62</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 63</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 64</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 65</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 66</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 67</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 68</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 69</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 70</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 71</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 72</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 73</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 74</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 75</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 76</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 77</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 78</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 79</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 80</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 81</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 82</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 83</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 84</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 85</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 86</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 87</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 88</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 89</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 90</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 91</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 92</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 93</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 94</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 95</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 96</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 97</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 98</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 99</div>
+                    </div>
+                    <div class="col pc-2-4 tl-4 mb-6">
+                        <div class="item">item 100</div>
                     </div>
                 </div>
             </div>
