@@ -36,20 +36,7 @@ html
 
 /* ------------------------------------------------------------ */
 
-.grid
-{
-    /* màn to hơn 1200px thì tối đa chỉ hiển thị 1200px */
-    width: 1200px;
-    /* bé hơn 1200px thì hiểu thị 100% */
-    max-width: 100%;
-    /* canh giữa */
-    margin: 0 auto;
-}
 
-.grid__full-width
-{
-    width: 100%;
-}
 
 .grid__row
 {
