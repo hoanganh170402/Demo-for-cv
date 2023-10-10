@@ -885,7 +885,7 @@
 {
     padding-left: 0;
     /* view port height - chiều cao trình duyệt */
-    height: 56vh;
+    max-height: 56vh;
     overflow-y: auto;
 }
 
@@ -977,7 +977,7 @@
 .header__cart-item-remove
 {
     font-size: 1.4rem;
-    color: var(--text-color);
+    color: #ccc;
 }
 
 .header__cart-item-remove:hover
