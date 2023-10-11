@@ -47,10 +47,17 @@
         font-size: 1.8rem;
     }
 
+    /* header sort bar */
+    .header__sort-bar
+    {
+        display: flex;
+    }
+
     .app__container
     {
-        margin-top: var(--header-height);
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
     }
+
 }
 
 /* tablet */
