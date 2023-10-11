@@ -1035,10 +1035,12 @@
 {
     content: "";
     position: absolute;
+    /* 50 % này là của thẻ chứa nó */
     top: 50%;
     left: 0;
     height: 60%;
     border-left: 1px solid #e5e5e5;
+    /* còn 50% này là của chính nó */
     transform: translateY(-50%);
 }
 
