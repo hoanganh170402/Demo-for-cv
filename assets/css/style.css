@@ -555,6 +555,13 @@
     height: var(--header-with-search-height);
     display: flex;
     align-items: center;
+    padding: 0 8px;
+}
+
+.mobile-icon
+{
+    font-size: 2.6rem;
+    color: var(--white-color);
 }
 
 .header__logo
@@ -566,6 +573,8 @@
 {
     color: transparent;
     text-decoration: none;
+    display: block;
+    line-height: 0;
 }
 
 .header__logo-img
@@ -581,6 +590,7 @@
     border-radius: 2px;
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .header__search-input-wrap

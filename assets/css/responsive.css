@@ -13,6 +13,8 @@
         right: 0;
         left: 0;
         z-index: 10;
+        display: flex;
+        align-items: center;
     }
     
     .header__search-history-item a
@@ -115,4 +117,129 @@
     {
         display: none;
     }
-}
+
+    .header-with-search
+    {
+        justify-content: space-between;
+    }
+
+    /* lấy checked từ thẻ input, không phải label */
+    .mobile-input-search:checked ~ .header__search
+    {
+        display: flex;
+    }
+
+    .header__search
+    {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: var(--header-sort-bar-height);
+        z-index: 1;
+        animation:mobileScroll linear 0.25s;
+    }
+
+    .header__search-history
+    {
+        position: fixed;
+        top: calc(var(--header-height) + var(--header-sort-bar-height));
+        left: 0;
+        width: 100%;
+    }
+
+    .header__cart,
+    .header__logo
+    {
+        width: unset;
+        margin-left: auto;
+    }
+
+    @keyframes mobileScroll
+    {
+        from 
+        {
+            top: calc(var(--header-height ) / 2);
+            opacity: 0;
+        }
+
+        to 
+        {
+            top: var(--header-height);
+            opacity: 1;
+        }
+    }
+
+    /* mobile bar */
+    .mobile-bar
+    {
+
+    }
+
+    .overlay
+    {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        display: none;
+        opacity: 0;
+        transition: opacity linear 0.2s;
+    }
+
+    .mobile-more
+    {
+        padding-left: 20px;
+    }
+
+    .mobile-bar__list
+    {
+        position: fixed;
+        top: var(--header-height);
+        right:0 ;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--white-color);
+        z-index: 1;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all linear 0.2s;
+    }
+
+    .mobile-bar__item
+    {
+        padding:20px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .mobile-bar__item:hover .mobile-bar__link
+    {
+        color: var(--primary-color);
+    }
+
+    .mobile-input-more:checked ~ .mobile-bar .mobile-bar__list
+    {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    .mobile-input-more:checked ~ .overlay
+    {
+        display: block;
+        opacity: 1;
+    }
+
+    .mobile-bar__link
+    {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.6rem;
+    }
+
+}   

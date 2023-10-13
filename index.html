@@ -142,6 +142,11 @@
 
                 <!-- header with search -->
                 <div class="header-with-search">
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="mobile-input-search">
+                    <label for="mobile-search-checkbox" class="mobile-search">
+                        <i class="mobile-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
                     <div class="header__logo">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -152,7 +157,7 @@
                         </a>
                     </div>
 
-                    <div class="header__search">
+                    <div class="header__search ">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Tìm Kiếm">
 
@@ -346,6 +351,29 @@
                             </div>
                         </div>
                     </div>
+                    <input type="checkbox"  hidden id="mobile-more-checkbox" class="mobile-input-more">
+                    <label for="mobile-more-checkbox" class="overlay"></label>
+
+                    <nav class="mobile-bar">
+                        <label for="mobile-more-checkbox" class="mobile-more">
+                            <i class="mobile-icon fa-solid fa-bars"></i>
+                        </label>
+
+                        <ul class="mobile-bar__list">
+                            <li class="mobile-bar__item">
+                                <a href="" class="mobile-bar__link">Đăng Ký</a>
+                            </li>
+                            <li class="mobile-bar__item">
+                                <a href="" class="mobile-bar__link">Đăng Nhập</a>
+                            </li>
+                            <li class="mobile-bar__item">
+                                <a href="" class="mobile-bar__link">Tuỳ Chọn</a>
+                            </li>
+                            <li class="mobile-bar__item">
+                                <a href="" class="mobile-bar__link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <ul class="header__sort-bar">
