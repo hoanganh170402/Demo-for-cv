@@ -128,9 +128,24 @@
         margin-left: auto;
     }
 
+    /* nav mobile */
     .nav-mobile
     {
         padding-left: 20px;
+    }
+
+    .overlay
+    {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        opacity: 0;
+        display: none;
+        transition: all linear 0.2s;
     }
 
     .mobile-input-checkbox:checked  ~ .header__search
@@ -138,6 +153,13 @@
         display: flex;
     }
 
+    .mobile-input-more:checked ~ .overlay
+    {
+        display: block;
+        opacity: 1;
+    }
+
+    /* checked từ thẻ input không phải từ label */
     .mobile-input-more:checked ~ .nav-mobile .nav-mobile__list
     {
         transform: translateX(0);
