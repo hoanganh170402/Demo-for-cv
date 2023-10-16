@@ -164,6 +164,7 @@
     {
         transform: translateX(0);
         opacity: 1;
+        display: block;
     }
 
     .header__search
@@ -201,4 +202,30 @@
         left: 0;
         width: 100%;
     }
+
+    .nav-mobile 
+    {
+        display: block;
+    }
+
+    .app__content 
+    {
+        margin: 0 4px;
+    }
+
+
+    /* pagination */
+
+    .home-pagination
+    {
+        padding-left: 0;
+
+    }
+
+    .pagination-item
+    {
+        margin: 0;
+    }
+
+    
 }

@@ -1,4 +1,7 @@
-
+.main
+{
+    overflow: hidden;
+}
 .header
 {
     height: var(--header-height);
@@ -1016,6 +1019,7 @@
 /* nav mobile */
 .nav-mobile
 {
+    display: none;
     position: relative;
 }
 
@@ -1024,13 +1028,14 @@
     position: absolute;
     top: 72px;
     right: -8px;
-    height: 100vh;
+    height: 180vh;
     width: 40vh;
     background-color: var(--white-color);
     padding-left: 0;
     margin: 0;
     list-style: none;
     z-index: 1;
+    /* display: none; */
     transform: translateX(100%);
     opacity: 0;
     transition: all linear 0.2s;
