@@ -1,4 +1,7 @@
-
+.main
+{
+    overflow: hidden;
+}
 .header
 {
     height: var(--header-height);
@@ -558,12 +561,6 @@
     padding: 0 8px;
 }
 
-.mobile-icon
-{
-    font-size: 2.6rem;
-    color: var(--white-color);
-}
-
 .header__logo
 {
     width: 200px;
@@ -1063,7 +1060,16 @@
 }
 
 /* mobile */
-
+.mobile-search,
+.mobile-bar
+{
+    display: none;
+}
+.mobile-icon
+{
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
 
 
 /* app container */
@@ -1451,6 +1457,7 @@ i.home-product-item__like-tick
 .home-pagination
 {
     margin: 40px 0 32px;
+    padding-left: 0;
 }
 
 /* footer-1 */

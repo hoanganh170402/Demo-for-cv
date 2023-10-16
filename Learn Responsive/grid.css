@@ -21,10 +21,10 @@
     --mb-gutter-negative:-4px;
     --tl-gutter:8px;
     --tl-gutter-negative:-8px;
-    --pc-low-gutter:12px;
-    --pc-low-gutter-negative:-12px;
-    --pc-hi-gutter:16px;
-    --pc-hi-gutter-negative:-16px;
+    --pc-low-gutter:5px;
+    --pc-low-gutter-negative:-5px;
+    --pc-hi-gutter:5px;
+    --pc-hi-gutter-negative:-5px;
 }
 
 .grid
