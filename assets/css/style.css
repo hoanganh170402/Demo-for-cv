@@ -590,7 +590,6 @@
     border-radius: 2px;
     display: flex;
     align-items: center;
-    display: none;
 }
 
 .header__search-input-wrap
