@@ -1027,7 +1027,7 @@
 .nav-mobile__list
 {
     position: absolute;
-    top: 72px;
+    top: 46px;
     right: -8px;
     height: 180vh;
     width: 40vh;
@@ -1673,14 +1673,8 @@ i.home-product-item__like-tick
 .footer__download-icon
 {
     height: 20px;
-    margin-left: 20px;
+    margin:0 0 10px 20px ;
 }
-
-.footer__download-icon:first-child
-{
-    margin-bottom: 5px;
-}
-
 
 /* footer-contact */
 .footer-2
