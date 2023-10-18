@@ -1,6 +1,12 @@
 /* tablet and mobile */
 @media (max-width:1023px)
 {
+    :root
+    {
+        --header-height:68px;
+        --navbar-height:0px;
+    }
+
     .hide-on-tablet-mobile
     {
         display: none;
@@ -82,10 +88,7 @@
         height: 80px;
     }
 
-    .footer__download-icon
-    {
-        height: 15px;
-    }
+
 }
 
 /* tablet */
@@ -270,4 +273,28 @@
     {
         margin: 0 4px;
     }
+
+    .home-product-item__sale-off
+    {
+        height: 50px;
+    }
+
+    /* footer */
+    .footer__heading
+    {
+        text-align: center;
+    }
+
+    .footer__download,
+    .footer-item__link
+    {
+        justify-content: center;
+    }
+
+    .footer__download-icon:first-child 
+    {
+        margin-bottom:15px;
+    }
+
+
 }   

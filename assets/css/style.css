@@ -571,7 +571,6 @@
     color: transparent;
     text-decoration: none;
     display: block;
-    line-height: 0;
 }
 
 .header__logo-img
@@ -1539,7 +1538,7 @@ i.home-product-item__like-tick
 .footer-1
 {
     border-top: 2px solid var(--primary-color);
-    padding-bottom: 30px;
+    padding:0 16px 30px;
 }
 
 .footer__heading
@@ -1548,6 +1547,7 @@ i.home-product-item__like-tick
     color: var(--text-color);
     font-weight: 400;
     margin: 25px 0 20px 0;
+
 }
 
 .footer-list
@@ -1638,6 +1638,7 @@ i.home-product-item__like-tick
 {
     position: relative;
     margin: 0 22px;
+    text-align: center;
 }
 
 .footer-contact__item::before
@@ -1671,5 +1672,5 @@ i.home-product-item__like-tick
     font-size: 1.2rem;
     color: var(--text-color);
     margin: 0;
-    padding-bottom: 10px;
+    padding: 0 10px 10px;
 }
