@@ -71,6 +71,12 @@
     {
         padding-top: 10px;
     }
+    
+    /* footer */
+    .footer-copyright
+    {
+        padding-bottom:  10px;
+    }
 
 }
 
@@ -241,5 +247,9 @@
         margin: 0;
     }
 
-    
+    /* footer */
+    .footer-1
+    {
+        padding: 0 16px 30px 16px;
+    }
 }

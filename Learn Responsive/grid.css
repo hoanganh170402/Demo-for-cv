@@ -17,8 +17,8 @@
 
 :root
 {
-    --mb-gutter:4px;
-    --mb-gutter-negative:-4px;
+    --mb-gutter:6px;
+    --mb-gutter-negative:-6px;
     --tl-gutter:8px;
     --tl-gutter-negative:-8px;
     --pc-low-gutter:5px;

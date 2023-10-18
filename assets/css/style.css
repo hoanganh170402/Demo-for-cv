@@ -1312,6 +1312,12 @@
     flex-shrink: 0;
 }
 
+.mobile-category__item:last-child
+{
+    margin-right: 0;
+    
+}
+
 .mobile-category__item:nth-of-type(3n + 1) .mobile-category__link
 {
     background-color: #7da6d3;
@@ -1344,6 +1350,7 @@
     justify-content: center;
     user-select: none;
     -webkit-user-select: none;
+    padding: 0 6px;
 }
 
 .mobile-category__name
@@ -1686,9 +1693,10 @@ i.home-product-item__like-tick
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 20px 0;
     margin: 0;
     padding: 10px 0;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-info__item
@@ -1725,6 +1733,8 @@ i.home-product-item__like-tick
     text-align: center;
     font-size: 1.4rem;
     color: var(--text-color);
+    padding: 0 20px;
+
 }
 
 .footer-location
